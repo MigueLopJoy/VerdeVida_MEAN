@@ -1,0 +1,19 @@
+.links-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-list .nav-link {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.links-list .nav-link:hover {
+    color: #666;
+}
+
+.links-list .nav-link:active {
+    color: #000;
+}

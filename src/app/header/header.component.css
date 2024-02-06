@@ -1,0 +1,44 @@
+.page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF6EE;
+    padding: 1rem 5rem;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.header-section .page-logo {
+    width: 12.5rem;
+}
+
+.page-menu-container {
+    width: 60%;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 7.5%;
+    margin-right: 5rem;
+}
+
+.icons-container .icon {
+    color: #000;
+    font-size: 2rem;
+}
+
+.icons-container .icon:hover {
+    color: #666;
+}
+
+.icons-container .icon:active {
+    color: #000;
+}

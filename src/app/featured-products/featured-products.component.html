@@ -1,0 +1,10 @@
+<div class="featured-products">
+    <h2>Productos destacados</h2>
+
+    <div class="products-container">
+        @for (product of products; track product._id) {
+        <app-product-card [product]="product"></app-product-card>
+        }
+    </div>
+
+</div>
