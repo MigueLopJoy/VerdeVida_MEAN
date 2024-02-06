@@ -16,6 +16,7 @@
     height: auto;
     border-radius: .25rem;
     margin-bottom: .75rem;
+    aspect-ratio: 16/9;
 }
 
 .product-card h5 {
