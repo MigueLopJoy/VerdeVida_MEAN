@@ -1,0 +1,13 @@
+app-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF6EE;
+    padding: 1rem 5rem;
+}
+
+.page-footer {
+    background-color: #327d1c;
+    padding: 5rem 15rem;
+}
