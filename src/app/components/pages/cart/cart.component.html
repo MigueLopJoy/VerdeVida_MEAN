@@ -1,0 +1,71 @@
+<div class="cart-container">
+
+    <h2>Cesta de la compra</h2>
+
+    <div class="shopping-cart">
+        <table>
+            <thead>
+                <tr>
+                    <th class="product-image">Imagen</th>
+                    <th class="product-name">Producto</th>
+                    <th class="product-description">Producto</th>
+                    <th class="product-quantity">Cantidad</th>
+                    <th class="product-removal">Eliminar</th>
+                    <th class="product-line-price">Precio</th>
+                    <th class="product-total-price">Total</th>
+                </tr>
+            </thead>
+            <tbody class="cart-products">
+
+                @for (item of cartItems; track item._id) {
+
+                <tr class="cart-product">
+                    <td class="product-image">
+                        <img src="./../../../../../assets/{{item.image}}">
+                    </td>
+                    <td class="product-title">{{item.name}}</td>
+                    <td class="product-details">
+                        <p class="product-description">{{item.description}}</p>
+                    </td>
+                    <td class="product-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">2</span>
+                        <button class="quantity-btn">+</button>
+                    </td>
+                    <td class="product-removal">
+                        <button class="remove-product">Remove</button>
+                    </td>
+                    <td class="product-price">{{item.price}}</td>
+                    <td class="product-total-price">25.98</td>
+                </tr>
+
+                }
+
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <div class="summary-item subtotal">
+                <label>Subtotal</label>
+                <div class="summary-value">71.97</div>
+            </div>
+            <div class="summary-item iva">
+                <label>IVA (4%)</label>
+                <div class="summary-value">3.60</div>
+            </div>
+            <div class="summary-item shipping">
+                <label>Envío</label>
+                <div class="summary-value">7,50</div>
+            </div>
+            <div class="summary-item total">
+                <label>Total</label>
+                <div class="summary-value">90.57</div>
+            </div>
+        </div>
+
+        <div class="checkout-btn-container">
+            <button class="checkout-btn">Finalizar compra</button>
+        </div>
+
+    </div>
+</div>

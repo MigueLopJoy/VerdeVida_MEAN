@@ -1,6 +1,6 @@
 .page-section.page-banner {
     height: calc(100vh - 136px);
-    background-image: url('./../../assets/banner2.svg');
+    background-image: url('./../../../../assets/banner2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
